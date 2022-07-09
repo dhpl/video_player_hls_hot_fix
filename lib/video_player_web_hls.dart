@@ -390,11 +390,11 @@ class _VideoPlayer {
       VideoEvent(
         eventType: VideoEventType.initialized,
         duration: Duration(
-          milliseconds: (1000).round(),
+          milliseconds: (videoElement.duration * 1000).round(),
         ),
         size: Size(
-          100,//videoElement.videoWidth.toDouble(),
-          100,//videoElement.videoHeight.toDouble(),
+          videoElement.videoWidth.toDouble(),
+          videoElement.videoHeight.toDouble(),
         ),
       ),
     );
