@@ -233,7 +233,7 @@ class _VideoPlayer {
     videoElement.setAttribute('playsinline', 'true');
 
     // Set autoplay to false since most browsers won't autoplay a video unless it is muted
-    videoElement.setAttribute('autoplay', 'true');
+    videoElement.setAttribute('autoplay', 'false');
 
     // TODO(hterkelsen): Use initialization parameters once they are available
     // ignore: undefined_prefixed_name
@@ -393,8 +393,8 @@ class _VideoPlayer {
           milliseconds: (1000).round(),
         ),
         size: Size(
-          videoElement.videoWidth.toDouble(),
-          videoElement.videoHeight.toDouble(),
+          100,//videoElement.videoWidth.toDouble(),
+          100,//videoElement.videoHeight.toDouble(),
         ),
       ),
     );
